@@ -13,12 +13,26 @@ h1, h2, h3, h4, h5, h6,
   line-height: $headings-line-height;
   color: $headings-color;
 
+  span{
+    color:#828282;
+    font-style:italic;
+    font-weight:200;
+  }
+
   small,
   .small {
     font-weight: normal;
     line-height: 1;
     color: $headings-small-color;
   }
+}
+
+.normal{
+  font-weight:normal;
+}
+
+.invert{
+  color:$text-invert;
 }
 
 h1, .h1,
