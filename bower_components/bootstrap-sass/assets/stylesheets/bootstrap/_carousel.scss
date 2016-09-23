@@ -91,11 +91,11 @@
 // ---------------------------
 
 .carousel-control {
-  position: absolute;
-  top: 0;
+  position: relative;
+  bottom: -20px;
   left: 0;
   bottom: 0;
-  width: $carousel-control-width;
+  // width: $carousel-control-width;
   @include opacity($carousel-control-opacity);
   font-size: $carousel-control-font-size;
   color: $carousel-control-color;
@@ -265,6 +265,11 @@
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 15;
+    width:auto;
+    margin-left:0px;
+    padding-left: 0;
   }
 }
