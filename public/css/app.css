@@ -2531,7 +2531,9 @@ select[multiple].input-lg,
   padding: 30px 60px;
   font-size: 24px;
   line-height: 1.42857;
-  border-radius: 0px; }
+  border-radius: 0px;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
@@ -2871,31 +2873,35 @@ tbody.collapse.in {
 
 .dropup,
 .dropdown {
-  position: relative; }
+  position: relative;
+  float: right; }
+
+button.dropdown-toggle {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  min-width: 118px;
+  padding: 5px 0px; }
 
 .dropdown-toggle:focus {
   outline: 0; }
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 34px;
+  left: 0px;
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
-  padding: 5px 0;
+  min-width: 100px;
+  padding: 0px;
   margin: 2px 0 0;
   list-style: none;
   font-size: 18px;
   text-align: left;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box; }
+  background-clip: padding-box;
+  color: white;
+  border: 1px solid white; }
   .dropdown-menu.pull-right {
     right: 0;
     left: auto; }
@@ -2906,11 +2912,11 @@ tbody.collapse.in {
     background-color: #e5e5e5; }
   .dropdown-menu > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: 8px 20px;
     clear: both;
     font-weight: normal;
     line-height: 1.42857;
-    color: #767676;
+    color: white;
     white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -4668,15 +4674,23 @@ button.close {
   .carousel-indicators .active {
     margin: 0;
     height: 12px;
-    background-color: #fff; }
+    background-color: #fff;
+    -webkit-transition: 0.1s ease-in-out left;
+    -o-transition: 0.1s ease-in-out left;
+    transition: 0.1s ease-in-out left; }
     .carousel-indicators .active:after {
       content: "";
       width: 15px;
       height: 5px;
       background-color: black;
       position: absolute;
-      top: 10px;
       left: 35px; }
+  .carousel-indicators li:nth-child(1).active:after {
+    top: 10px; }
+  .carousel-indicators li:nth-child(2).active:after {
+    top: 40px; }
+  .carousel-indicators li:nth-child(3).active:after {
+    top: 75px; }
 
 .carousel-caption {
   position: absolute;
@@ -5008,3 +5022,19 @@ footer img {
   padding: 10px;
   color: white;
   border-radius: 100px; }
+
+.toBeAnimated {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-transition-timing-function: ease-in-out;
+  /* Safari and Chrome */
+  transition-timing-function: ease-in-out; }
+
+.os-animation {
+  opacity: 0; }
+
+.os-animation.animated {
+  opacity: 1; }
+
+.width110 {
+  width: 110%; }
