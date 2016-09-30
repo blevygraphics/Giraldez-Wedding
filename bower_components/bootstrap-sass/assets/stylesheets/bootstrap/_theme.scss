@@ -43,7 +43,10 @@ footer img{
 .details{
   background-color:#ffffff;
   padding:40px;
+  margin:20px 0px;
+  @media screen and (min-width: $screen-sm-min) { 
   margin:140px 0px;
+  }
 }
 
 .yellow{
@@ -59,9 +62,12 @@ footer img{
 }
 
 .top-offset{
+  top:10px;
+  @media screen and (min-width: $screen-sm-min) { 
     top: 40px;
   position: relative;
   z-index: 1;
+}
 }
 
 .margin{
@@ -85,7 +91,41 @@ footer img{
   border-radius:100px;
 }
 
+.toBeAnimated {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    transition-timing-function: ease-in-out;
+}
 
+.os-animation{
+  opacity: 0;
+}
+ 
+.os-animation.animated{
+    opacity: 1;
+}
+
+.width110{
+  width:100%;
+  @media screen and (min-width: $screen-sm-min) { 
+    width:110%;
+     }
+}
+
+h1{
+  font-size:36px;
+  @media screen and (min-width: $screen-sm-min) { 
+    width:46px;
+     }
+}
+
+.margin-fix{
+  margin:50px 0;
+  @media screen and (min-width: $screen-sm-min) { 
+    margin:0;
+     }
+}
 
 
 

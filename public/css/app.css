@@ -2901,7 +2901,11 @@ button.dropdown-toggle {
   text-align: left;
   background-clip: padding-box;
   color: white;
-  border: 1px solid white; }
+  border: 1px solid white;
+  background-color: white; }
+  @media screen and (min-width: 768px) {
+    .dropdown-menu {
+      background-color: transparent; } }
   .dropdown-menu.pull-right {
     right: 0;
     left: auto; }
@@ -2917,7 +2921,11 @@ button.dropdown-toggle {
     font-weight: normal;
     line-height: 1.42857;
     color: white;
-    white-space: nowrap; }
+    white-space: nowrap;
+    color: #767676; }
+    @media screen and (min-width: 768px) {
+      .dropdown-menu > li > a {
+        color: white; } }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
@@ -3711,7 +3719,8 @@ a.label:hover, a.label:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #aeb0b5;
-  background: url("../img/hero-img.jpg") center center no-repeat; }
+  background: url("../img/hero-img.jpg") center center no-repeat;
+  background-size: cover; }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -4693,7 +4702,7 @@ button.close {
     top: 75px; }
 
 .carousel-caption {
-  position: absolute;
+  position: relative;
   left: 0px;
   right: 0px;
   bottom: 20px;
@@ -4722,7 +4731,7 @@ button.close {
     margin-right: -10px; }
   .carousel-caption {
     left: 0px;
-    right: 0px;
+    right: 20px;
     padding-bottom: 30px;
     bottom: 0px;
     position: relative; }
@@ -4990,7 +4999,10 @@ footer img {
 .details {
   background-color: #ffffff;
   padding: 40px;
-  margin: 140px 0px; }
+  margin: 20px 0px; }
+  @media screen and (min-width: 768px) {
+    .details {
+      margin: 140px 0px; } }
 
 .yellow {
   color: #fccf40; }
@@ -5002,9 +5014,12 @@ footer img {
   color: #5b616b; }
 
 .top-offset {
-  top: 40px;
-  position: relative;
-  z-index: 1; }
+  top: 10px; }
+  @media screen and (min-width: 768px) {
+    .top-offset {
+      top: 40px;
+      position: relative;
+      z-index: 1; } }
 
 .margin20 {
   margin: 20px auto; }
@@ -5037,4 +5052,19 @@ footer img {
   opacity: 1; }
 
 .width110 {
-  width: 110%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .width110 {
+      width: 110%; } }
+
+h1 {
+  font-size: 36px; }
+  @media screen and (min-width: 768px) {
+    h1 {
+      width: 46px; } }
+
+.margin-fix {
+  margin: 50px 0; }
+  @media screen and (min-width: 768px) {
+    .margin-fix {
+      margin: 0; } }

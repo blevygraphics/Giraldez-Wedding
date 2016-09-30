@@ -16,6 +16,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   white-space: nowrap;
   @include button-size(30px, 60px, 24px, $line-height-base, 0px);
+  @include transition-duration(.35s);
   // @include user-select(none);
 
   &,
