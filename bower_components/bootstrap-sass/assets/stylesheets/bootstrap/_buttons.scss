@@ -15,7 +15,7 @@
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   white-space: nowrap;
-  @include button-size(30px, 60px, 24px, $line-height-base, 0px);
+  @include button-size(30px, 60px, 20px, .5, 0px);
   @include transition-duration(.35s);
   // @include user-select(none);
 
@@ -89,6 +89,7 @@ a.btn {
 .btn-outline {
   border:2px solid $brand-primary;
   width:50%;
+  padding:25px 0px;
   &:hover{
     background-color:$brand-primary;
   }

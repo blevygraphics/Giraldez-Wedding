@@ -2529,8 +2529,8 @@ select[multiple].input-lg,
   background-image: none;
   white-space: nowrap;
   padding: 30px 60px;
-  font-size: 24px;
-  line-height: 1.42857;
+  font-size: 20px;
+  line-height: 0.5;
   border-radius: 0px;
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s; }
@@ -2781,7 +2781,8 @@ fieldset[disabled] a.btn {
 
 .btn-outline {
   border: 2px solid #0a2360;
-  width: 50%; }
+  width: 50%;
+  padding: 25px 0px; }
   .btn-outline:hover {
     background-color: #0a2360; }
 
@@ -4754,7 +4755,7 @@ button.close {
     justify-content: flex-start;
     flex-direction: column;
     padding-bottom: 30px;
-    height: 100px;
+    height: 12g0px;
     margin-left: 20px;
     top: 0px;
     padding-left: 15px; }
@@ -5077,3 +5078,6 @@ h1 {
 
 hr {
   margin-top: 40px; }
+
+.pad40 {
+  padding: 40px auto; }
