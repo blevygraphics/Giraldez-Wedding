@@ -116,7 +116,7 @@ footer img{
 h1{
   font-size:36px;
   @media screen and (min-width: $screen-sm-min) { 
-    width:46px;
+    font-size:46px;
      }
 }
 
@@ -125,6 +125,10 @@ h1{
   @media screen and (min-width: $screen-sm-min) { 
     margin:0;
      }
+}
+
+hr{
+  margin-top:40px;
 }
 
 

@@ -2779,6 +2779,12 @@ fieldset[disabled] a.btn {
     color: #d9534f;
     background-color: #fff; }
 
+.btn-outline {
+  border: 2px solid #0a2360;
+  width: 50%; }
+  .btn-outline:hover {
+    background-color: #0a2360; }
+
 .btn-link {
   color: #205493;
   font-weight: normal;
@@ -5061,10 +5067,13 @@ h1 {
   font-size: 36px; }
   @media screen and (min-width: 768px) {
     h1 {
-      width: 46px; } }
+      font-size: 46px; } }
 
 .margin-fix {
   margin: 50px 0; }
   @media screen and (min-width: 768px) {
     .margin-fix {
       margin: 0; } }
+
+hr {
+  margin-top: 40px; }
